@@ -1,0 +1,428 @@
+/*General Styles*/
+
+*,
+:after,
+:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    color: inherit;
+    font: inherit;
+    font-size: 100%;
+    max-width: 100%;
+}
+
+html {
+    font: normal 16px sans-serif;
+    color: #555;
+}
+
+ul,
+nav {
+    list-style: none;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+a.btn {
+    text-decoration-style: none;
+    ;
+    font-weight: bold;
+    text-align: center;
+    background-color: #3f51b5;
+    opacity: 1;
+    margin-bottom: 53px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 80px
+}
+
+section:not(.smoki):nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+.grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+hr {
+    width: 80px;
+    height: 4px;
+    background-color: #000000;
+    border: 0;
+    margin-bottom: 50px;
+}
+
+section .h3.title {
+    text-transform: capitalize;
+    font: bold 32px "Open Sans", sans-seriff;
+    text-align: center;
+}
+
+section p {
+    max-width: 775px;
+    line-height: 2;
+    padding: 0 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #000;
+}
+
+/*Back To Top BTN*/
+
+/*Header Style*/
+
+header {
+    position: absolute;
+    width: 100%;
+    height: 17vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 45px 0;
+    animation: 1s fadein 0.5s forwards;
+    opacity: 0;
+    z-index: 1;
+    font-family: monospace;
+    padding-bottom: 100px;
+}
+
+@keyframes fadein {
+    100% {
+        opacity: 100;
+    }
+}
+
+header h2 {
+    font-family: monospace;
+    color: #dce6f7;
+    font-size: 25px;
+
+}
+
+header nav div {
+    display: flex;
+    margin-right: px;
+    color: #dce6f7;
+
+}
+
+header nav div li {
+    margin: 0 7px;
+    text-decoration: none;
+    display: block;
+    widows: 100%;
+    height: 100%;
+    font-size: 25px;
+    letter-spacing: 2px;
+
+}
+
+/*Smoki Styles*/
+
+.smoki {
+    position: relative;
+    justify-content: center;
+    padding: 35px 45px 0;
+    text-align: left;
+    min-height: 100vh;
+    color: #dce6f7;
+    font-family: monospace;
+}
+
+.smoki-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
+    background-image: url(assests/img/viktor-juric-976870-unsplash.jpg);
+    background-position: 0px 0px;
+    background-repeat: repeat-x;
+    animation: animatedBackground 40s linear infinite;
+}
+
+@keyframes animatedBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100vw 0;
+    }
+}
+
+
+.smoki h1 {
+    font: bold 60px "Open Sans", sans-seriff;
+    text-indent: 1%;
+
+}
+
+.smoki h3 {
+    font: bold 20px "Open Sans", sans-seriff;
+    margin-bottom: 40px;
+    text-align: center;
+
+}
+
+
+.smoki a.btn-top {
+    opacity: 0;
+    padding: 20px 46px;
+    margin-top: 100px;
+    margin-bottom: 53px;
+    border: 1.5px solid;
+    font-size: 22px;
+    animation: 1s slidefade 1s forwards;
+}
+
+.smoki a.btn-top:hover {
+    background-color: #dce6f7;
+    color: #000;
+}
+
+
+@keyframes slidefade {
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/*About Me*/
+
+.about-me {
+    display: inline-block;
+    height: 60vh;
+    background-color: white;
+    font-family: monospace;
+    padding: 35px 46px 20px;
+}
+
+.about-me h1 {
+    font-weight: bold;
+    font-size: 96px;
+    color: #192538;
+    text-indent: 6%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.about-me .Intro {
+    text-indent: 10%;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    word-spacing: 5px;
+}
+
+.about-me .DivIntro {
+    color: #323944;
+    font-family: 'Raleway', sans-serif;
+    word-spacing: 1px;
+}
+
+.about-me .DivIntro p {
+    padding-top: 50px;
+    Font-size: 28px;
+    font-weight: 00;
+    text-indent: 10%;
+    text-align: center;
+
+}
+
+.about-me .DivIntro span {
+    text-decoration: underline #192538;
+    color:
+}
+
+.about-me .Media-Buttons {
+    color: black;
+}
+
+.Connect-Me {
+    vertical-align: center;
+    text-align: center;
+    font-size: 35px;
+
+}
+
+.Connect-Me-Link li a {
+    opacity: 1;
+    color: #c7d1e5;
+    border-radius: 15px;
+    list-style-type: none;
+    width: 100px;
+    height: 00px;
+    line-height: 100px;
+    padding: 1%;
+    border: 1px solid black;
+    cursor: pointer;
+
+    transition: ease .276s;
+    background-color: #183668;
+}
+
+.Connect-Me-Link:hover > li {
+    opacity: 0.5;
+}
+
+
+/*Connect*/
+
+.Media-Click-Links {
+    height: vh;
+    flex-basis: 100%;
+    padding: 35px 45px 0;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+
+
+
+/*Projects*/
+
+.Skills-BckGrnd {
+    background-color: #192538;
+}
+
+.Skills .grid li {
+    padding: 0px;
+    flex-basis: 50%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding-left: 20px;
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.Skills1 .grid li i {
+    color: white;
+}
+
+.Skills1 .grid li h4 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+
+.Skills .title {
+    font-weight: bold;
+    font-size: 80px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.Skills p {
+    color: white;
+}
+
+
+#image-hover:hover {
+    filter: blur(2px);
+    z-index: 1;
+}
+
+
+.skew-line2 {
+    transform: skewY(deg);
+    border: 30px solid white;
+    position: relative;
+    top: 40px;
+}
+
+/*Temporary Footer*/
+
+.Psudo-Footer {
+    height: 19vh;
+    background-color: #192538;
+    padding-top: 35px;
+    text-align: center;
+    font-family: monospace;
+    color: #e1e3e8
+}
+
+.Psudo-Footer span {
+    color: red;
+}
+
+.BckTopBtn {
+    text-decoration: none;
+    opacity: 1;
+    font-weight: bold;
+    padding-top: 20px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+}
+
+.Name-Bottom {
+    padding-bottom: 15px;
+    text-decoration: none;
+    opacity: 1;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+}
+
+.Social-links {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.Social {
+    padding-left: 0px;
+
+}
+
+.Social li {
+    display: inline-block;
+}
+
+.Social li i {
+    border: none;
+    color: white;
+    font-size: 50px;
+    padding: 12px 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+
+.Social:hover > li {
+    opacity: 0.5;
+}
+
+.Social:hover > li:hover {
+    opacity: 1;
+}
+
+
+
+.skew-line3 {
+    transform: skewY(deg);
+    border: 35px solid #fff;
+    position: relative;
+    top: px;
+}

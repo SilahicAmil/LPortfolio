@@ -152,7 +152,7 @@ header nav div li {
     height: 100%;
     background-size: cover;
     z-index: -1;
-    background-image: url(assests/img/viktor-juric-976870-unsplash.jpg);
+    background-image: url(viktor-juric-976870-unsplash.jpg);
     background-position: 0px -90px;
     /*    background-repeat: repeat-x;*/
     /* animation: animatedBackground 40s  infinite; */
